@@ -1,5 +1,18 @@
-@import 'header.scss';
-@import 'fonts';
-@import 'mixins.scss';
+@import "header.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "mainSection.scss";
+@import "section.scss";
 
- 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 60%;
+}

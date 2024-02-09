@@ -1,6 +1,7 @@
-@import 'mixins.scss';
+@import "mixins.scss";
 
 .header {
+  margin: 40px;
   &-menu-nav {
     display: flex;
     justify-content: space-around;
@@ -9,17 +10,17 @@
       display: flex;
       list-style-type: none;
       &-item {
-  
-        &::after {
-          content: ""; 
-          width: 1px;
-          height: 100px;
-          background-color: #000;
-        }
+        margin-left: 20px;
+
         &-link {
           text-decoration: none;
           @include text;
-         
+          &::after {
+            content: "";
+            background-color: #111111;
+            border: 1px solid;
+            margin-left: 20px;
+          }
         }
         &-select {
           border: none;
@@ -29,13 +30,29 @@
         }
       }
     }
-
   }
+  .search {
+    &-input {
+      width: 370px;
+      height: 37px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #3a6150;
+      border: 2px solid #3a6150;
+      font-family: "Outfit", sans-serif;
+      padding-left: 15px;
+      position: relative;
 
-
-  .search-input{
-      width: 37rem;
-      height: 5rem;
+      &-img {
+        position: absolute;
+        background-color: #3a6150;
+        width: 42px;
+        height: 37px;
+        border: 3px solid #3a6150;
+      }
     }
-  
+  }
 }

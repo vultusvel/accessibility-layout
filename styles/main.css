@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+.header {
+  margin: 40px;
+}
 .header-menu-nav {
   display: flex;
   justify-content: space-around;
@@ -9,26 +12,172 @@
   list-style-type: none;
 }
 .header-menu-nav-list-item {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .header-menu-nav-list-item-link {
   text-decoration: none;
-  font-family: "Outfit";
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
   text-align: left;
   color: #111111;
+  font-family: "Outfit", sans-serif;
+}
+.header-menu-nav-list-item-link::after {
+  content: "";
+  background-color: #111111;
+  border: 1px solid;
+  margin-left: 20px;
 }
 .header-menu-nav-list-item-select {
   border: none;
   outline: none;
-  font-family: "Outfit";
+  padding-top: 2px;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
   text-align: left;
   color: #111111;
+  font-family: "Outfit", sans-serif;
+}
+.header .search-input {
+  width: 370px;
+  height: 37px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3a6150;
+  border: 2px solid #3a6150;
+  font-family: "Outfit", sans-serif;
+  padding-left: 15px;
+  position: relative;
+}
+.header .search-input-img {
+  position: absolute;
+  background-color: #3a6150;
+  width: 42px;
+  height: 37px;
+  border: 3px solid #3a6150;
+}
+
+.div-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.div-main-section-block {
+  margin-right: 25px;
+}
+.div-main-section-block-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A6150;
+  font-family: "Outfit", sans-serif;
+}
+.div-main-section-block-subtitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A6150;
+  margin-top: 15px;
+}
+.div-main-section-block-text {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 10px;
+}
+.div-main-section-block-button {
+  width: 200px;
+  height: 50px;
+  background-color: #3A6150;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 1px solid #3A6150;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.div-main-second-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+.div-main-second-section-about {
+  display: flex;
+  background-color: #3A6150;
+  width: 640px;
+  height: 289px;
+  padding: 20px;
+}
+.div-main-second-section-about-block {
+  padding-left: 20px;
+}
+.div-main-second-section-about-block-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.div-main-second-section-about-block-text {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.div-main-second-section-about-block-link {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 60%;
 }/*# sourceMappingURL=main.css.map */

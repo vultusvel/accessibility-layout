@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+.div-main-second-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 20px;
+  &-about {
+    display: flex;
+    background-color: $text-color;
+    width: 640px;
+    height: 289px;
+    padding: 20px;
+
+    &-block {
+      padding-left: 20px;
+      &-title {
+        font-family: $font-outfit;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: 400px;
+        width: 100%;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      &-link {
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+      }
+    }
+  }
+}

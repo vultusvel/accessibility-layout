@@ -1,0 +1,57 @@
+.div-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.div-main-section-block {
+  margin-right: 25px;
+}
+.div-main-section-block-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A6150;
+  font-family: "Outfit", sans-serif;
+}
+.div-main-section-block-subtitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A6150;
+  margin-top: 15px;
+}
+.div-main-section-block-text {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 10px;
+}
+.div-main-section-block-button {
+  width: 200px;
+  height: 50px;
+  background-color: #3A6150;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 1px solid #3A6150;
+  text-align: center;
+  margin-top: 40px;
+}/*# sourceMappingURL=mainSection.css.map */
