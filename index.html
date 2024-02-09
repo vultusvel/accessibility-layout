@@ -3,40 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Accessibility</title>
   </head>
   <body>
     <header class="header">
-      <nav role="navigation" class="menu-nav">
-        <ul class="menu-nav-list">
-          <li class="menu-nav-list-item">
-            <a href="#" class="menu-nav-list-item-link" aria-label="About Us"
+      <nav role="navigation" class="header-menu-nav">
+        <ul class="header-menu-nav-list">
+          <li class="header-menu-nav-list-item">
+            <a
+              href="#"
+              class="header-menu-nav-list-item-link"
+              aria-label="About Us"
               >About Us</a
             >
           </li>
-          <li class="menu-nav-list-item">
-            <a href="#" class="menu-nav-list-item-link" aria-label="Contact Us"
+          <li class="header-menu-nav-list-item">
+            <a
+              href="#"
+              class="header-menu-nav-list-item-link"
+              aria-label="Contact Us"
               >Contact Us</a
             >
           </li>
-          <li class="menu-nav-list-item">
-            <a href="#" class="menu-nav-list-item-link" aria-label="Blog"
+          <li class="header-menu-nav-list-item">
+            <a href="#" class="header-menu-nav-list-item-link" aria-label="Blog"
               >Blog</a
             >
           </li>
-          <li class="menu-nav-list-item">
-            <a href="#" class="menu-nav-list-item-link" aria-label="Site Map"
+          <li class="header-menu-nav-list-item">
+            <a
+              href="#"
+              class="header-menu-nav-list-item-link"
+              aria-label="Site Map"
               >Site Map</a
             >
           </li>
-          <li class="menu-nav-list-item">
-            <select name="language" id="language">
+          <li class="header-menu-nav-list-item">
+            <select
+              name="language"
+              id="language"
+              class="header-menu-nav-list-item-select"
+            >
               <option value="">Eng</option>
             </select>
           </li>
         </ul>
         <div class="search">
-          <input type="text" name="search" placeholder="Search this site" />
+          <input class="search-input" type="text" name="search" placeholder="Search this site" />
+          <img alt="search" role="img" aria-labelledby="caption1" class = "search-input-img" src="img/Vector.svg">
         </div>
       </nav>
     </header>

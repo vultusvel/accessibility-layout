@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+.header-menu-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-menu-nav-list {
+  display: flex;
+  list-style-type: none;
+}
+.header-menu-nav-list-item {
+  margin-right: 20px;
+}
+.header-menu-nav-list-item-link {
+  text-decoration: none;
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #111111;
+}
+.header-menu-nav-list-item-select {
+  border: none;
+  outline: none;
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #111111;
+}/*# sourceMappingURL=main.css.map */

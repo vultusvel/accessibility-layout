@@ -1,0 +1,41 @@
+@import 'mixins.scss';
+
+.header {
+  &-menu-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-list {
+      display: flex;
+      list-style-type: none;
+      &-item {
+  
+        &::after {
+          content: ""; 
+          width: 1px;
+          height: 100px;
+          background-color: #000;
+        }
+        &-link {
+          text-decoration: none;
+          @include text;
+         
+        }
+        &-select {
+          border: none;
+          outline: none;
+          padding-top: 2px;
+          @include text;
+        }
+      }
+    }
+
+  }
+
+
+  .search-input{
+      width: 37rem;
+      height: 5rem;
+    }
+  
+}
