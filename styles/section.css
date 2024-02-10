@@ -4,12 +4,22 @@
   justify-content: space-around;
   margin: 40px 20px;
 }
+@media screen and (max-width: 1300px) {
+  .div-main-second-section {
+    flex-wrap: wrap;
+  }
+}
 .div-main-second-section-about {
   display: flex;
   background-color: #3A6150;
   width: 640px;
   height: 289px;
   padding: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .div-main-second-section-about {
+    margin-bottom: 30px;
+  }
 }
 .div-main-second-section-about-block {
   padding-left: 20px;
@@ -25,7 +35,7 @@
   margin-bottom: 20px;
 }
 .div-main-second-section-about-block-text {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -37,7 +47,7 @@
   margin-bottom: 20px;
 }
 .div-main-second-section-about-block-link {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;

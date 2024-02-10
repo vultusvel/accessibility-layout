@@ -6,6 +6,11 @@
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 985px) {
+  .header-menu-nav {
+    flex-wrap: wrap;
+  }
+}
 .header-menu-nav-list {
   display: flex;
   list-style-type: none;

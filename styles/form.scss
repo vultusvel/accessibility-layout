@@ -1,0 +1,306 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #71837b;
+  &-block {
+    display: flex;
+    height: 100vh;
+    padding: 60px 0;
+    z-index: 1;
+    @media screen and (max-width: 1400px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &-contacts {
+      background-image: url("../img/Rectangle\ 573.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      @media screen and (max-width: 1400px) {
+        background-image: none;
+      }
+      &-b {
+        padding: 20px 40px;
+
+        &-title {
+          @include font;
+          padding-bottom: 20px;
+          @media screen and (max-width: 1400px) {
+            text-align: center;
+          }
+        }
+        &-subtitle {
+          font-family: $font-outfit;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          max-width: 340px;
+          width: 100%;
+          padding-bottom: 45px;
+          @media screen and (max-width: 1400px) {
+            margin: 0 auto;
+          }
+        }
+
+        &-info {
+          display: flex;
+          align-items: center;
+          padding-bottom: 10px;
+          @media screen and (max-width: 1400px) {
+            justify-content: center;
+          }
+          &-i {
+            font-family: $font-outfit;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #111111;
+            text-decoration: none;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    &-links {
+      display: flex;
+      align-items: flex-end;
+      height: 280px;
+      @media screen and (max-width: 1400px) {
+        height: 30px;
+        justify-content: center;
+      }
+      &-link {
+        padding-left: 40px;
+        img {
+          width: 32px;
+        }
+      }
+    }
+  }
+
+  &-table {
+    background-color: #fff;
+    max-width: 1000px;
+    width: 100%;
+    height: 637px;
+    margin-left: -20px;
+    border-radius: 0 2% 2% 0%;
+    z-index: -1;
+    @media screen and (max-width: 985px) {
+      max-width: 800px;
+      width: 100%;
+    }
+    &-info {
+      padding-left: 40px;
+      &-message {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin-top: 40px;
+
+        label {
+          font-family: $font-outfit;
+          font-size: 14px;
+          color: #111111;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding-bottom: 10px;
+        }
+
+        input {
+          max-width: 890px;
+          width: 100%;
+          height: 104px;
+          border-radius: 3px;
+          padding-left: 5px;
+          padding-bottom: 50px;
+          @media screen and (max-width: 985px) {
+            max-width: 600px;
+            width: 100%;
+          }
+        }
+      }
+      &-NS {
+        display: flex;
+        padding-left: 20px;
+        margin-top: 40px;
+        @media screen and (max-width: 985px) {
+          flex-direction: column;
+        }
+
+        .required {
+          color: red;
+          padding-right: 5px;
+        }
+
+        label {
+          font-family: $font-outfit;
+          font-size: 14px;
+          color: #111111;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          @media screen and (max-width: 985px) {
+            margin-right: 40px;
+          }
+        }
+        input {
+          width: 416px;
+          height: 44px;
+          border-radius: 3px;
+          padding-left: 10px;
+          margin-top: 10px;
+          @media screen and (max-width: 985px) {
+            width: 216px;
+          }
+        }
+      }
+
+      &-EPH {
+        display: flex;
+        padding-left: 20px;
+        margin-top: 20px;
+        @media screen and (max-width: 985px) {
+          flex-direction: column;
+        }
+
+        label {
+          font-family: $font-outfit;
+          font-size: 14px;
+          color: #111111;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding-left: 5px;
+          padding-bottom: 10px;
+          @media screen and (max-width: 985px) {
+            margin-right: 20px;
+          }
+        }
+        .email-label {
+          @media screen and (max-width: 985px) {
+            margin-right: 75px;
+          }
+        }
+        &-email {
+          display: flex;
+          flex-direction: column;
+          margin-right: 52px;
+          @media screen and (max-width: 985px) {
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+        &-phone {
+          display: flex;
+          position: relative;
+          padding-top: 10px;
+        }
+        input {
+          width: 416px;
+          height: 44px;
+          border-radius: 3px;
+          padding-left: 10px;
+          @media screen and (max-width: 985px) {
+            width: 216px;
+          }
+        }
+        .div-phone {
+          @media screen and (max-width: 985px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+        .phone {
+          padding-left: 80px;
+        }
+        select {
+          width: 70px;
+          height: 30px;
+          border: none;
+          position: absolute;
+          z-index: 1;
+          top: 16px;
+          left: 8px;
+        }
+      }
+
+      &-checkboxes {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        margin-top: 40px;
+        @media screen and (max-width: 985px) {
+          flex-wrap: wrap;
+        }
+
+        label {
+          font-family: $font-outfit;
+          font-size: 14px;
+          color: #111111;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          width: 180px;
+          padding-left: 10px;
+        }
+        input[type="radio"] {
+          width: 20px;
+          height: 20px;
+          accent-color: $text-color;
+        }
+      }
+      &-terms {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        margin-top: 40px;
+
+        label {
+          font-family: $font-outfit;
+          font-size: 14px;
+          color: #111111;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 0 15px;
+        }
+
+        input[type="checkbox"] {
+          accent-color: $text-color;
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      &-button {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 50px;
+        @media screen and (max-width: 800px) {
+          margin: 0;
+        }
+        &-btn {
+          @include button;
+          color: #fff;
+          background-color: $text-color;
+          border: 1px solid $text-color;
+          width: 196px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

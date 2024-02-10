@@ -5,12 +5,18 @@
   align-items: center;
   justify-content: space-around;
   margin: 40px 20px;
+  @media screen and (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
   &-about {
     display: flex;
     background-color: $text-color;
     width: 640px;
     height: 289px;
     padding: 20px;
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 30px;
+    }
 
     &-block {
       padding-left: 20px;
@@ -25,7 +31,7 @@
         margin-bottom: 20px;
       }
       &-text {
-        font-family: Helvetica;
+        font-family: Helvetica, sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
@@ -38,7 +44,7 @@
       }
 
       &-link {
-        font-family: Helvetica;
+        font-family: Helvetica, sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;

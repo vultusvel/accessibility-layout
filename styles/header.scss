@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 985px) {
+      flex-wrap: wrap;
+    }
     &-list {
       display: flex;
       list-style-type: none;
