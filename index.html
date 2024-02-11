@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Accessible Page">
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preload" href="img/unsplash_W5XTTLpk1-I.jpg" as="image" />
+
     <title>Accessibility</title>
   </head>
   <body>
@@ -42,6 +39,7 @@
               href="#"
               class="header-menu-nav-list-item-link"
               aria-label="Site Map"
+              role="menuitem"
               >Site Map</a
             >
           </li>
@@ -50,6 +48,7 @@
               name="language"
               id="language"
               class="header-menu-nav-list-item-select"
+              aria-label="Select"
             >
               <option value="">Eng</option>
             </select>
@@ -68,6 +67,8 @@
               role="img"
               aria-labelledby="caption1"
               class="search-input-img-i"
+              width="19px"
+              height="19px"
               src="img/Vector.svg"
             />
           </button>
@@ -95,13 +96,25 @@
           <button class="div-main-section-block-button">Buy Now</button>
         </div>
         <div class="div-main-section-img">
-          <img src="img/unsplash_W5XTTLpk1-I.jpg" alt="Main Image" srcset="" />
+          <img
+            src="img/unsplash_W5XTTLpk1-I.jpg"
+            alt="Main Image"
+            srcset=""
+            width="648px"
+            height="648px"
+          />
         </div>
       </div>
       <section class="div-main-second-section">
         <div class="div-main-second-section-about">
           <div class="div-main-second-section-about-img">
-            <img src="img/Rectangle 570.png" alt="Main Image" srcset="" />
+            <img
+              src="img/Rectangle 570.png"
+              alt="Main Image"
+              srcset=""
+              width="180px"
+              height="230px"
+            />
           </div>
           <div class="div-main-second-section-about-block">
             <h2 class="div-main-second-section-about-block-title">About Us</h2>
@@ -151,33 +164,57 @@
                 hours. Happy to see your message!
               </h3>
               <div class="form-block-contacts-b-info">
-                <img src="img/bi_facebook.svg" alt="" srcset="" />
+                <img
+                  src="img/bi_facebook.svg"
+                  alt=""
+                  srcset=""
+                  width="21px"
+                  height="21px"
+                />
                 <a href="#" class="form-block-contacts-b-info-i"
                   >+380 93 15 32 456</a
                 >
               </div>
               <div class="form-block-contacts-b-info">
-                <img src="img/bi_facebook.svg" alt="" srcset="" />
+                <img
+                  src="img/bi_facebook.svg"
+                  alt="Icon"
+                  srcset=""
+                  width="21px"
+                  height="21px"
+                />
                 <a href="#" class="form-block-contacts-b-info-i"
                   >example@gmail.com</a
                 >
               </div>
               <div class="form-block-contacts-b-info">
-                <img src="img/bi_facebook.svg" alt="" srcset="" />
+                <img
+                  src="img/bi_facebook.svg"
+                  alt="Icon2"
+                  srcset=""
+                  width="21px"
+                  height="21px"
+                />
                 <a href="#" class="form-block-contacts-b-info-i"
                   >Pidmurma 5a, Lviv</a
                 >
               </div>
             </div>
             <div class="form-block-links">
-              <a href="http://" class="form-block-links-link">
-                <img src="img/bi_facebook.svg" alt="" srcset="" />
+              <a href="#" class="form-block-links-link">
+                <img
+                  src="img/bi_facebook.svg"
+                  alt="Icon3"
+                  srcset=""
+                  width="28px"
+                  height="28px"
+                />
               </a>
-              <a href="http://" class="form-block-links-link">
-                <img src="img/bi_facebook.svg" alt="" srcset="" />
+              <a href="#" class="form-block-links-link">
+                <img src="img/bi_facebook.svg" alt="Icon4" srcset="" />
               </a>
-              <a href="http://" class="form-block-links-link">
-                <img src="img/bi_facebook.svg" alt="" srcset="" />
+              <a href="#" class="form-block-links-link">
+                <img src="img/bi_facebook.svg" alt="Icon5" srcset="" />
               </a>
             </div>
           </div>
@@ -223,7 +260,11 @@
                 <div class="div-phone">
                   <label for="phone">Phone number</label>
                   <div class="form-table-info-EPH-phone">
-                    <select id="country-code" name="country-code">
+                    <select
+                      id="country-code"
+                      name="country-code"
+                      aria-label="Select-form"
+                    >
                       <option value="+380">+380</option>
                       <option value="+374">+374</option>
                     </select>
